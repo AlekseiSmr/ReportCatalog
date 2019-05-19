@@ -1,0 +1,12 @@
+@import './styles/palette.scss';
+@import './styles/fonts.scss';
+
+@import './styles/navbar.scss';
+
+html,
+body {
+  @extend %global-font;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

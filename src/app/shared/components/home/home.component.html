@@ -1,0 +1,24 @@
+<div class="tile-container">
+  <div class="container-fluid container-fluid-fix">
+    <div class="row d-sm-none d-md-block">
+      <div class="col">
+        <h3>Report Catalog</h3>
+      </div>
+    </div>
+    <div class="row h-100">
+      <div class="col h-100">
+        <div class="d-flex flex-wrap">
+          <div class="p-2" *ngFor="let item of tileItems">
+            <app-tile
+              [imageLeft]="item.leftImage"
+              [imageRight]="item.rightImage"
+              [title]="item.title"
+              [text]="item.text"
+              (tileClick)="onTileClick(item.id)"
+            ></app-tile>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

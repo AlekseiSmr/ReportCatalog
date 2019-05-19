@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="document" transform="translate(11 16)">
+    <g id="Group_20" data-name="Group 20" transform="translate(-5.348 -9.036)">
+      <rect id="canvas_background" class="cls-1" width="14.696" height="12.071"/>
+    </g>
+    <g id="Group_21" data-name="Group 21" transform="translate(-11 -16)">
+      <path id="svg_1" class="cls-2" d="M31.043,4H12.957C10.771,4,9,5.455,9,7.25v19.5C9,28.545,10.771,30,12.957,30H31.043C33.229,30,35,28.545,35,26.75V7.25C35,5.455,33.229,4,31.043,4Zm1.7,22.75a1.567,1.567,0,0,1-1.7,1.393H12.957a1.567,1.567,0,0,1-1.7-1.393V7.25a1.567,1.567,0,0,1,1.7-1.393H31.043a1.567,1.567,0,0,1,1.7,1.393Z" transform="translate(-9 -4)"/>
+      <path id="svg_2" class="cls-2" d="M32.826,12H18.13a1.045,1.045,0,0,0-1.13.929,1.045,1.045,0,0,0,1.13.929h14.7a1.045,1.045,0,0,0,1.13-.929A1.045,1.045,0,0,0,32.826,12Z" transform="translate(-12.478 -8.286)"/>
+      <path id="svg_3" class="cls-2" d="M32.826,20H18.13a1.045,1.045,0,0,0-1.13.929,1.045,1.045,0,0,0,1.13.929h14.7a1.045,1.045,0,0,0,1.13-.929A1.045,1.045,0,0,0,32.826,20Z" transform="translate(-12.478 -12.571)"/>
+      <path id="svg_4" class="cls-2" d="M32.826,28H18.13a.947.947,0,1,0,0,1.857h14.7a.947.947,0,1,0,0-1.857Z" transform="translate(-12.478 -16.857)"/>
+      <path id="svg_5" class="cls-2" d="M24.348,36H18.13a.947.947,0,1,0,0,1.857h6.217a.947.947,0,1,0,0-1.857Z" transform="translate(-12.478 -21.143)"/>
+    </g>
+  </g>
+</svg>

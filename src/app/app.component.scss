@@ -1,0 +1,48 @@
+@import '../styles/palette.scss';
+@import '../styles/navbar.scss';
+
+.router-outlet-container {
+  margin-left: $navbar-sidebar-width;
+}
+
+.panel {
+  position: absolute;
+  width: 350px;
+  height: 100%;
+  background-color: $bg-400;
+  border-right: 1px solid $bg-600;
+  left: $navbar-sidebar-width;
+  z-index: 99;
+}
+
+.panel-content {
+  position: relative;
+}
+
+.mb-top-group {
+  top: 6%;
+}
+
+.mb-bottom-group {
+  top: 70%;
+}
+
+.parent {
+  position: relative;
+}
+
+.child {
+  position: relative;
+}
+
+.mini-panel {
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  background-color: $bg-400;
+  z-index: 99;
+}
+
+.first-item {
+  margin-top: $navbar-sidebar-width;
+}

@@ -1,0 +1,5 @@
+<div class="d-flex flex-column">
+  <div class="p-2" *ngFor="let construction of constructions$ | async">
+    {{ construction.id }}-{{ construction.name }}
+  </div>
+</div>

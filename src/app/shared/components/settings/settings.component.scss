@@ -1,0 +1,35 @@
+@import '../../../../styles/palette.scss';
+
+.settings-container {
+  border-radius: 50%;
+  position: relative;
+  :hover {
+    background-color: #2d64c7;
+    border-radius: 50%;
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  opacity: 1;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  border-radius: 6px;
+  visibility: hidden;
+  padding: 5px 10px 5px 10px;
+  background-color: $bg-900;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  left: 110%;
+  top: 16%;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

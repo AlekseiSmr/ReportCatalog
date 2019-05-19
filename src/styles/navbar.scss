@@ -1,0 +1,79 @@
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins/breakpoints';
+
+@import '../styles/palette.scss';
+
+$navbar-sidebar-width: 80px;
+$navbar-top-height: 56px;
+$navbar-sidebar-breakpoint: 'sm';
+
+body {
+  padding-top: 90px;
+
+  @include media-breakpoint-up($navbar-sidebar-breakpoint) {
+    padding-top: 0;
+  }
+}
+
+@mixin navbar-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: $zindex-fixed;
+  background-color: $navbar !important;
+
+  @include media-breakpoint-up($navbar-sidebar-breakpoint) {
+    bottom: 0;
+    width: $navbar-sidebar-width;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+
+    .navbar-collapse {
+      flex-grow: 0;
+      flex-direction: column;
+      width: 100%;
+
+      .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+
+        .nav-item {
+          width: 100%;
+
+          .dropdown-menu {
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.navbar {
+  &.fixed-left {
+    @include navbar-sidebar;
+    @include media-breakpoint-up($navbar-sidebar-breakpoint) {
+      right: auto;
+
+      .navbar-nav {
+        .nav-item {
+          .dropdown-toggle {
+            &:after {
+              border-top: $caret-width solid transparent;
+              border-left: $caret-width solid;
+              border-bottom: $caret-width solid transparent;
+              border-right: none;
+              vertical-align: baseline;
+            }
+          }
+
+          .dropdown-menu {
+            left: 100%;
+          }
+        }
+      }
+    }
+  }
+}
